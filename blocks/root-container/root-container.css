@@ -12,6 +12,8 @@
 
 .root-container {
     max-width: 880px;
+    width: 90%;
+
     margin: auto;
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;

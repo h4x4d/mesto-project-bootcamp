@@ -1,0 +1,12 @@
+.profile__container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .profile__container {
+        display: inline-block;
+        text-align: center;
+    }
+}
