@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter/Inter-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter/Inter-Bold.woff2);
+    font-weight: bold;
+}
+
+.root-container {
+    max-width: 880px;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
