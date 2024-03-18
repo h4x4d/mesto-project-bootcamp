@@ -7,8 +7,8 @@
     font-weight: 900;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .popup__head-text {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
