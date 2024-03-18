@@ -14,3 +14,21 @@
 @import url(../blocks/profile/__info/__work-place/profile__info__work-place.css);
 @import url(../blocks/profile/__info/__row/profile__info__row.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
+
+@import url(../blocks/content/content.css);
+@import url(../blocks/content/__column/content__column.css);
+@import url(../blocks/content/__columns/content__columns.css);
+@import url(../blocks/content/__card/content__card.css);
+
+@import url(../blocks/content/__card/__image/content__card__image.css);
+@import url(../blocks/content/__card/__image/_place/content__card__image_place_dombai.css);
+@import url(../blocks/content/__card/__image/_place/content__card__image_place_elbrus.css);
+@import url(../blocks/content/__card/__image/_place/content__card__image_place_karachaevsk.css);
+@import url(../blocks/content/__card/__name/content__card__name.css);
+@import url(../blocks/content/__card/__like-button/content__card__like-button.css);
+@import url(../blocks/content/__card/__description/content__card__description.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);
+
+
