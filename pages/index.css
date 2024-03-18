@@ -26,6 +26,7 @@
 @import url(../blocks/content/__card/__image/_place/content__card__image_place_karachaevsk.css);
 @import url(../blocks/content/__card/__name/content__card__name.css);
 @import url(../blocks/content/__card/__like-button/content__card__like-button.css);
+@import url(../blocks/content/__card/__like-button/__icon/content__card__like-button__icon.css);
 @import url(../blocks/content/__card/__description/content__card__description.css);
 
 @import url(../blocks/footer/footer.css);
