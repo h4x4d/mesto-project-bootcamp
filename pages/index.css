@@ -20,6 +20,14 @@
 @import url(../blocks/content/__columns/content__columns.css);
 @import url(../blocks/content/__card/content__card.css);
 
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__save-button/popup__save-button.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__head-text/popup__head-text.css);
+
 @import url(../blocks/content/__card/__image/content__card__image.css);
 @import url(../blocks/content/__card/__image/_place/content__card__image_place_dombai.css);
 @import url(../blocks/content/__card/__image/_place/content__card__image_place_elbrus.css);

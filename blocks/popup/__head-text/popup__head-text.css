@@ -1,0 +1,14 @@
+.popup__head-text {
+    color: black;
+
+    margin: 0 0 15px 0;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 500px) {
+    .popup__head-text {
+        font-size: 1rem;
+    }
+}
