@@ -1,7 +1,20 @@
 .content__card {
+    margin-top: 20px;
+
+    width: calc((100% - 40px)/3);
+
     background-color: white;
-    height: 100%;
-    width: 100%;
 
     border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .content__card {
+        width: calc((100% - 40px)/2);
+    }
+}
+@media screen and (max-width: 500px) {
+    .content__card {
+        width: 100%;
+    }
 }

@@ -11,122 +11,102 @@
 </head>
 <body>
 <div class="page">
+    <header class="header">
+        <img src="media/header/logo.svg" alt="Mesto Russia" class="header__logo">
+    </header>
     <div class="root-container">
-        <header class="header">
-            <div class="header__container">
-                <img src="media/header/logo.svg" alt="Mesto Russia">
-            </div>
-        </header>
-
-        <div class="profile">
-            <div class="profile__container">
-                <img src="media/profile/avatar.jpg" alt="No avatar:(" class="profile__avatar">
-
-                <div class="profile__info">
-                    <div class="profile__info__row">
-                        <h2 class="profile__info__name">Жак-Ив Кусто</h2>
-                        <button class="profile__info__edit-button">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 1.32827L2.60377 8.7666L1.28302 7.41936L8.66038 0L10 1.32827ZM0 10L1.96226 9.41177L0.584906 8.08349L0 10Z"
-                                      fill="white"/>
-                            </svg>
-                        </button>
-                    </div>
-                    <h4 class="profile__info__work-place">Исследователь океана</h4>
-                </div>
-
-                <button class="profile__add-button">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 9.77778H12.2222V0H9.77778V9.77778H0V12.2222H9.77778V22H12.2222V12.2222H22V9.77778Z"
-                              fill="white"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <div class="popup popup_opened">
-            <div class="popup__container">
-                <button class="popup__close-button"></button>
-                <h3 class="popup__head-text">Редактировать профиль</h3>
-                <input type="text" placeholder="Ваше имя" class="popup__input">
-                <input type="text" placeholder="Ваша работа" class="popup__input">
-                <button class="popup__save-button">
-                    Добавить
-                </button>
-            </div>
-        </div>
 
         <main class="content">
-            <div class="content__columns">
-                <div class="content__column">
-                    <div class="content__card">
-                        <div class="content__card__image content__card__image_place_karachaevsk"></div>
-                        <div class="content__card__description">
-                            <h3 class="content__card__name">Карачаевск</h3>
-                            <button class="content__card__like-button">
+            <div class="profile">
+                <div class="profile__container">
+                    <img src="media/profile/avatar.jpg" alt="Нет аватарки" class="profile__avatar">
+                    <div class="profile__info">
+                        <div class="profile__row">
+                            <h1 class="profile__name">Жак-Ив Кусто</h1>
+                            <button class="profile__edit-button" type="button">
+                                <img src="media/profile/edit-button.svg" alt="Редактировать" class="profile__edit-button-icon">
                             </button>
                         </div>
-                    </div>
-                </div>
-                <div class="content__column">
-                    <div class="content__card">
-                        <div class="content__card__image content__card__image_place_elbrus"></div>
-                        <div class="content__card__description">
-                            <h3 class="content__card__name">Гора Эльбрус</h3>
-                            <button class="content__card__like-button">
-                            </button>
+                        <div class="profile__row">
+                            <p class="profile__work-place">Исследователь океана</p>
                         </div>
                     </div>
-                </div>
-                <div class="content__column">
-                    <div class="content__card">
-                        <div class="content__card__image content__card__image_place_dombai"></div>
-                        <div class="content__card__description">
-                            <h3 class="content__card__name">Домбай</h3>
-                            <button class="content__card__like-button">
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="content__column">
-                    <div class="content__card">
-                        <div class="content__card__image content__card__image_place_elbrus"></div>
-                        <div class="content__card__description">
-                            <h3 class="content__card__name">Гора Эльбрус</h3>
-                            <button class="content__card__like-button">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__column">
-                    <div class="content__card">
-                        <div class="content__card__image content__card__image_place_dombai"></div>
-                        <div class="content__card__description">
-                            <h3 class="content__card__name">Домбай</h3>
-                            <button class="content__card__like-button">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="content__column">
-                    <div class="content__card">
-                        <div class="content__card__image content__card__image_place_karachaevsk"></div>
-                        <div class="content__card__description">
-                            <h3 class="content__card__name">Карачаево-Черкессия</h3>
-                            <button class="content__card__like-button">
-                            </button>
-                        </div>
-                    </div>
+                    <button class="profile__add-button" type="submit">
+                        <img src="media/profile/add-button.svg" alt="Новая карточка">
+                    </button>
                 </div>
             </div>
+
+            <div class="popup">
+                <div class="popup__container">
+                    <button class="popup__close-button" type="button"></button>
+                    <h3 class="popup__head-text">Редактировать профиль</h3>
+                    <form name="add-card">
+                        <input type="text" placeholder="Ваше имя" class="popup__input">
+                        <input type="text" placeholder="Ваша работа" class="popup__input">
+                        <button class="popup__save-button" type="submit">
+                            Сохранить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <section class="content__columns">
+                <article class="content__card">
+                    <img src="media/cards/images/karachaevsk.png" alt="Карачаевск" class="content__image">
+                    <div class="content__description">
+                        <h2 class="content__name">Карачаевск</h2>
+                        <button class="content__like-button" type="button">
+                        </button>
+                    </div>
+                </article>
+                <article class="content__card">
+                    <img src="media/cards/images/elbrus.png" alt="Гора Эльбрус" class="content__image">
+                    <div class="content__description">
+                        <h2 class="content__name">Гора Эльбрус</h2>
+                        <button class="content__like-button" type="button">
+                        </button>
+                    </div>
+                </article>
+                <article class="content__card">
+                    <img src="media/cards/images/dombai.png" alt="Домбай" class="content__image">
+                    <div class="content__description">
+                        <h2 class="content__name">Домбай</h2>
+                        <button class="content__like-button" type="button">
+                        </button>
+                    </div>
+                </article>
+                <article class="content__card">
+                    <img src="media/cards/images/elbrus.png" alt="Гора Эльбрус" class="content__image">
+                    <div class="content__description">
+                        <h2 class="content__name">Гора Эльбрус</h2>
+                        <button class="content__like-button" type="button">
+                        </button>
+                    </div>
+                </article>
+                <article class="content__card">
+                    <img src="media/cards/images/dombai.png" alt="Домбай" class="content__image">
+                    <div class="content__description">
+                        <h2 class="content__name">Домбай</h2>
+                        <button class="content__like-button" type="button">
+                        </button>
+                    </div>
+                </article>
+                <article class="content__card">
+                    <img src="media/cards/images/karachaevsk.png" alt="Карачаево-Черкессия" class="content__image">
+                    <div class="content__description">
+                        <h2 class="content__name">Карачаево-Черкессия</h2>
+                        <button class="content__like-button" type="button">
+                        </button>
+                    </div>
+                </article>
+            </section>
         </main>
 
 
-        <header class="footer">
+        <footer class="footer">
             <p class="footer__text">© 2024 Mesto Russia</p>
-        </header>
+        </footer>
     </div>
 </div>
 </body>

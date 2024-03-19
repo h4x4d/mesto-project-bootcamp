@@ -1,4 +1,6 @@
-.content__card__description {
+.content__description {
     display: flex;
     justify-content: space-between;
+
+    min-height: 75px;
 }

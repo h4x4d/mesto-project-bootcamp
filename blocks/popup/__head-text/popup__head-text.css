@@ -9,6 +9,8 @@
 
 @media screen and (max-width: 500px) {
     .popup__head-text {
-        font-size: 1rem;
+        padding-top: 7px;
+        font-size: 1.125rem;
+        margin-bottom: 40px;
     }
 }

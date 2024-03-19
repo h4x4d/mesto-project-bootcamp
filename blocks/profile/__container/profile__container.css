@@ -1,10 +1,10 @@
 .profile__container {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .profile__container {
         display: inline-block;
         text-align: center;
