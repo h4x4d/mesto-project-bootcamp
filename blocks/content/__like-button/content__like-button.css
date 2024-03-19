@@ -1,4 +1,4 @@
-.content__card__like-button {
+.content__like-button {
     margin: auto 20px auto 0;
     border: 1px solid white;
     background-image: url(/media/cards/like.svg);
@@ -11,12 +11,12 @@
     height: 20px;
 }
 
-.content__card__like-button:hover {
+.content__like-button:hover {
     opacity: 50%;
     cursor: pointer;
 }
 
-.content__card__like-button:active {
+.content__like-button:active {
     opacity: 100%;
     background-image: url(/media/cards/like-active.svg);
 }
