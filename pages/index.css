@@ -3,20 +3,19 @@
 @import url(../blocks/root-container/root-container.css);
 
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/__container/header__container.css);
+@import url(../blocks/header/__title/header__title.css);
 
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__container/profile__container.css);
 @import url(../blocks/profile/__avatar/profile__avatar.css);
 @import url(../blocks/profile/__info/profile__info.css);
-@import url(../blocks/profile/__info/__edit-button/profile__info__edit-button.css);
-@import url(../blocks/profile/__info/__name/profile__info__name.css);
-@import url(../blocks/profile/__info/__work-place/profile__info__work-place.css);
-@import url(../blocks/profile/__info/__row/profile__info__row.css);
+@import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__work-place/profile__work-place.css);
+@import url(../blocks/profile/__row/profile__row.css);
 @import url(../blocks/profile/__add-button/profile__add-button.css);
 
 @import url(../blocks/content/content.css);
-@import url(../blocks/content/__column/content__column.css);
 @import url(../blocks/content/__columns/content__columns.css);
 @import url(../blocks/content/__card/content__card.css);
 
@@ -28,14 +27,10 @@
 @import url(../blocks/popup/__close-button/popup__close-button.css);
 @import url(../blocks/popup/__head-text/popup__head-text.css);
 
-@import url(../blocks/content/__card/__image/content__card__image.css);
-@import url(../blocks/content/__card/__image/_place/content__card__image_place_dombai.css);
-@import url(../blocks/content/__card/__image/_place/content__card__image_place_elbrus.css);
-@import url(../blocks/content/__card/__image/_place/content__card__image_place_karachaevsk.css);
-@import url(../blocks/content/__card/__name/content__card__name.css);
-@import url(../blocks/content/__card/__like-button/content__card__like-button.css);
-@import url(../blocks/content/__card/__like-button/__icon/content__card__like-button__icon.css);
-@import url(../blocks/content/__card/__description/content__card__description.css);
+@import url(../blocks/content/__image/content__image.css);
+@import url(../blocks/content/__name/content__card__name.css);
+@import url(../blocks/content/__like-button/content__like-button.css);
+@import url(../blocks/content/__description/content__description.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__text/footer__text.css);
