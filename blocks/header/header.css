@@ -1,9 +1,20 @@
 
 .header {
+    max-width: 880px;
+    width: 90%;
+
     margin: auto;
     display: flex;
     align-items: center;
-    height: 10vh; /* 120 px - 95px; */
+    min-height: 17vh;
 
     border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+
+@media screen and (max-width: 500px) {
+    .header {
+        width: 100%;
+        min-height: 15vh;
+    }
 }
