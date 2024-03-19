@@ -1,9 +1,10 @@
 .profile__row {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
-@media screen and (max-width: 500px) {
-    .profile__info__row {
+@media screen and (max-width: 650px) {
+    .profile__row {
+        justify-content: center;
     }
 }

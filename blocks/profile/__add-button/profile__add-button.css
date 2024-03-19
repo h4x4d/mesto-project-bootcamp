@@ -8,10 +8,10 @@
     background-color: black;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .profile__add-button {
         width: 100%;
-        margin-top: 35px;
+        margin-top: 27px;
     }
 }
 

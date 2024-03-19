@@ -6,3 +6,9 @@
 
     padding-top: 30px;
 }
+
+@media screen and (max-width: 650px) {
+    .content__columns {
+        padding-top: 15px;
+    }
+}

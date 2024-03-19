@@ -7,10 +7,17 @@
     padding: 35px;
 
     height: 330px;
-    max-width: 90%;
+    max-width: calc(100% - 40px);
     width: 430px;
 
     box-sizing: border-box;
 
     position: relative;
+}
+
+@media screen and (max-width: 650px) {
+    .popup__container {
+        padding: 20px;
+        height: 320px;
+    }
 }
