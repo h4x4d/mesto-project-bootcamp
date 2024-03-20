@@ -7,3 +7,9 @@
 
     justify-self: start;
 }
+
+@media screen and (max-width: 500px) {
+    .profile__avatar {
+        margin: 5px auto 0 auto;
+    }
+}

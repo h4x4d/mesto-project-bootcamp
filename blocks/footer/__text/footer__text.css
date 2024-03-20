@@ -1,5 +1,11 @@
 .footer__text {
+    margin: 70px 0 0 0;
     color: #545454;
-    padding-top: 7vh;
     font-size: 1.125rem;
+}
+
+@media screen and (max-width: 500px) {
+    .footer__text {
+        font-size: 0.875rem;
+    }
 }

@@ -6,7 +6,6 @@
     margin: auto;
     display: flex;
     align-items: center;
-    min-height: 17vh;
 
     border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
@@ -15,6 +14,5 @@
 @media screen and (max-width: 500px) {
     .header {
         width: 100%;
-        min-height: 15vh;
     }
 }
