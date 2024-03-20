@@ -6,7 +6,8 @@
 
 @media screen and (max-width: 650px) {
     .profile__container {
-        display: inline-block;
+        flex-direction: column;
+        gap: 0;
         text-align: center;
     }
 }
