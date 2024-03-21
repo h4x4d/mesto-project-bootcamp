@@ -8,3 +8,9 @@
         height: 120px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .footer__text-container {
+        height: 100px;
+    }
+}
