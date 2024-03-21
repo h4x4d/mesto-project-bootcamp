@@ -44,8 +44,10 @@
                     <button class="popup__close-button edit-popup__close-button" type="button"></button>
                     <h3 class="popup__head-text">Редактировать профиль</h3>
                     <form name="change-profile" class="profile__form">
-                        <input type="text" name ="name" placeholder="Ваше имя" class="popup__input edit-popup__name-input">
-                        <input type="text" name="work" placeholder="Ваша работа" class="popup__input edit-popup__work-input">
+                        <input type="text" name="name" placeholder="Ваше имя"
+                               class="popup__input edit-popup__name-input">
+                        <input type="text" name="work" placeholder="Ваша работа"
+                               class="popup__input edit-popup__work-input">
                         <button class="popup__save-button edit-popup__save-button" type="submit">
                             Сохранить
                         </button>
@@ -58,12 +60,22 @@
                     <button class="popup__close-button add-popup__close-button" type="button"></button>
                     <h3 class="popup__head-text">Новое место</h3>
                     <form name="add-card" class="card__form">
-                        <input type="text" name ="name" placeholder="Название" class="popup__input add-popup__name-input">
-                        <input type="text" name="image" placeholder="Ссылка на картинку" class="popup__input add-popup__image-input">
+                        <input type="text" name="name" placeholder="Название"
+                               class="popup__input add-popup__name-input">
+                        <input type="text" name="image" placeholder="Ссылка на картинку"
+                               class="popup__input add-popup__image-input">
                         <button class="popup__save-button add-popup__save-button" type="submit">
                             Создать
                         </button>
                     </form>
+                </div>
+            </div>
+
+            <div class="popup gallery-popup popup_dark">
+                <div class="popup__image-container">
+                    <button class="popup__close-button gallery-popup__close-button" type="button"></button>
+                    <img src="" alt="" class="popup__image">
+                    <p class="popup__image-name"></p>
                 </div>
             </div>
             <section class="content__columns">
@@ -79,7 +91,7 @@
     </div>
 </div>
 
-<template id="card" >
+<template id="card">
     <article class="content__card">
         <button class="content__delete-button" type="button"></button>
         <img src="" alt="" class="content__image">
