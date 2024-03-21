@@ -11,18 +11,23 @@ const editPopupWorkInput = document.querySelector('.edit-popup__work-input')
 
 const editForm = document.querySelector('.profile__form')
 
-console.log(editForm)
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 
 editButton.addEventListener('click', function () {
+    editPopup.classList.add('popup_visible');
     editPopup.classList.add('popup_opened');
     editPopupNameInput.value = nameField.textContent
     editPopupWorkInput.value = workField.textContent
 
 })
 
-editPopupCloseButton.addEventListener('click', function () {
+editPopupCloseButton.addEventListener('click', async function () {
     editPopup.classList.remove('popup_opened');
+    await sleep(200);
+    editPopup.classList.remove('popup_visible');
 })
 
 editForm.addEventListener('submit', function (event) {
@@ -30,5 +35,5 @@ editForm.addEventListener('submit', function (event) {
     nameField.textContent = editPopupNameInput.value
     workField.textContent = editPopupWorkInput.value
 
-    editPopup.classList.remove('popup_opened');
+    addPopupCloseButton.click();
 })

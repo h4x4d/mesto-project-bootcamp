@@ -1,7 +1,9 @@
 .content__image {
+    aspect-ratio: 1 / 1;
     width: 100%;
     object-fit: cover;
     object-position: center;
+    overflow: hidden;
 
     border-radius: 10px 10px 0 0;
 }

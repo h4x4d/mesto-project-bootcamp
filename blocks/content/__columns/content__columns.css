@@ -1,6 +1,6 @@
 .content__columns {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     margin: auto;
     flex-wrap: wrap;
 
