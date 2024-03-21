@@ -1,0 +1,4 @@
+.content__like-button_active {
+    opacity: 100%;
+    background-image: url(../../../../media/cards/like-active.svg);
+}

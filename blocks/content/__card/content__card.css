@@ -1,5 +1,5 @@
 .content__card {
-    margin-top: 20px;
+    position: relative;
 
     width: calc((100% - 40px)/3);
 
