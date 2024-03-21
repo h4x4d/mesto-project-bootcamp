@@ -1,3 +1,5 @@
+// Ответьте на вопросы, которые я задал в README, пожалуйста
+
 const initialCards = [
     {
         name: 'Архыз',
@@ -30,29 +32,51 @@ const cardsContainer = document.querySelector('.content__columns')
 // add popup
 const addButton = document.querySelector('.profile__add-button')
 const addPopup = document.querySelector('.add-popup')
-const addPopupCloseButton = document.querySelector('.add-popup__close-button')
 
 const addPopupNameInput = document.querySelector('.add-popup__name-input')
 const addPopupImageInput = document.querySelector('.add-popup__image-input')
 
-const addForm = document.querySelector('.card__form')
+const addForm = document.forms["add-card"]
 
 // image popup
 const galleryPopup = document.querySelector('.gallery-popup')
 const galleryPopupImage = document.querySelector('.popup__image')
 const galleryPopupText = document.querySelector('.popup__image-name')
-const galleryPopupCloseButton = document.querySelector('.gallery-popup__close-button')
 
+// edit popup
+const editButton = document.querySelector('.profile__edit-button')
+const editPopup = document.querySelector('.edit-popup')
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+const nameField = document.querySelector('.profile__name')
+const workField = document.querySelector('.profile__work-place')
+
+const editPopupNameInput = document.querySelector('.edit-popup__name-input')
+const editPopupWorkInput = document.querySelector('.edit-popup__work-input')
+
+const editForm = document.forms['change-profile']
+
+const closeButtons = document.querySelectorAll('.popup__close-button');
+
+function openPopup(popup) {
+    popup.classList.add('popup_opened');
 }
 
+function closePopup(popup) {
+    popup.classList.remove('popup_opened');
+}
+
+closeButtons.forEach((button) => {
+    const popup = button.closest('.popup');
+    button.addEventListener('click', () => closePopup(popup));
+});
 
 function addCard(card) {
-    let newCard = cardTemplate.cloneNode(true);
-    newCard.querySelector('.content__image').src = card.link;
-    newCard.querySelector('.content__image').alt = card.name;
+    const newCard = cardTemplate.cloneNode(true);
+
+    const image = newCard.querySelector('.content__image');
+    image.src = card.link;
+    image.alt = card.name;
+
     newCard.querySelector('.content__name').textContent = card.name;
 
     newCard.querySelector('.content__like-button').addEventListener('click', function (event) {
@@ -60,49 +84,50 @@ function addCard(card) {
     })
 
     newCard.querySelector('.content__delete-button').addEventListener('click', function (event) {
-        event.target.parentElement.remove()
+        event.target.closest('.content__card').remove()
     })
 
-    newCard.querySelector('.content__image').addEventListener('click', function (event) {
-        galleryPopup.classList.add('popup_visible');
-        galleryPopup.classList.add('popup_opened');
-        galleryPopupImage.src = event.target.src;
-        const name = event.target.nextElementSibling.querySelector('.content__name').textContent;
-        galleryPopupImage.alt = name;
-        galleryPopupText.textContent = name;
+    image.addEventListener('click', function (event) {
+        openPopup(galleryPopup);
+        galleryPopupImage.src = card.link;
+        galleryPopupImage.alt = card.name;
+        galleryPopupText.textContent = card.name;
     })
 
     cardsContainer.prepend(newCard);
 }
 
-for (let i = initialCards.length - 1; i >= 0; --i) {
-    addCard(initialCards[i]);
-}
+initialCards.reverse().forEach((card) => {
+    addCard(card);
+})
 
 // Create popup
 
 addButton.addEventListener('click', function () {
-    addPopup.classList.add('popup_visible');
-    addPopup.classList.add('popup_opened');
-})
-
-addPopupCloseButton.addEventListener('click', async function () {
-    addPopup.classList.remove('popup_opened');
-    await sleep(200);
-    addPopup.classList.remove('popup_visible');
+    console.log(addPopup);
+    openPopup(addPopup);
 })
 
 addForm.addEventListener('submit', async function (event) {
     event.preventDefault()
     addCard({'name': addPopupNameInput.value, 'link': addPopupImageInput.value})
-
-    addPopupCloseButton.click();
+    event.target.reset();
+    closePopup(addPopup);
 })
 
 // Gallery popup
 
-galleryPopupCloseButton.addEventListener('click', async function () {
-    galleryPopup.classList.remove('popup_opened');
-    await sleep(200);
-    galleryPopup.classList.remove('popup_visible');
+editButton.addEventListener('click', function () {
+    openPopup(editPopup);
+    editPopupNameInput.value = nameField.textContent
+    editPopupWorkInput.value = workField.textContent
+
+})
+
+editForm.addEventListener('submit', function (event) {
+    event.preventDefault()
+    nameField.textContent = editPopupNameInput.value
+    workField.textContent = editPopupWorkInput.value
+
+    closePopup(editPopup);
 })
