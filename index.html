@@ -39,14 +39,14 @@
                 </div>
             </div>
 
-            <div class="popup">
+            <div class="popup edit-popup">
                 <div class="popup__container">
-                    <button class="popup__close-button" type="button"></button>
+                    <button class="popup__close-button edit-popup__close-button" type="button"></button>
                     <h3 class="popup__head-text">Редактировать профиль</h3>
-                    <form name="add-card">
-                        <input type="text" placeholder="Ваше имя" class="popup__input">
-                        <input type="text" placeholder="Ваша работа" class="popup__input">
-                        <button class="popup__save-button" type="submit">
+                    <form name="change-profile" class="profile__form">
+                        <input type="text" name ="name" placeholder="Ваше имя" class="popup__input edit-popup__name-input">
+                        <input type="text" name="work" placeholder="Ваша работа" class="popup__input edit-popup__work-input">
+                        <button class="popup__save-button edit-popup__save-button" type="submit">
                             Сохранить
                         </button>
                     </form>
@@ -112,5 +112,17 @@
         </footer>
     </div>
 </div>
+
+<template id="card" class="content__card">
+    <img src="" alt="" class="content__image">
+    <div class="content__description">
+        <h2 class="content__name"></h2>
+        <button class="content__like-button" type="button">
+        </button>
+    </div>
+</template>
+
+<script src="blocks/popup/edit-popup.js"></script>
+<script src="blocks/content/__card/content__card.js"></script>
 </body>
 </html>
