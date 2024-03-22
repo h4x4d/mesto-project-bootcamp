@@ -70,7 +70,8 @@ closeButtons.forEach((button) => {
     button.addEventListener('click', () => closePopup(popup));
 });
 
-function addCard(card) {
+
+function createCard(card) {
     const newCard = cardTemplate.cloneNode(true);
 
     const image = newCard.querySelector('.content__image');
@@ -93,8 +94,12 @@ function addCard(card) {
         galleryPopupImage.alt = card.name;
         galleryPopupText.textContent = card.name;
     })
+    return newCard
+}
 
-    cardsContainer.prepend(newCard);
+function addCard(card, method="prepend") {
+    const newCard = createCard(card);
+    cardsContainer[method](newCard);
 }
 
 initialCards.reverse().forEach((card) => {
