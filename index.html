@@ -2,18 +2,18 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Mesto</title>
 
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="pages/index.css">
+    <link href="vendor/normalize.css" rel="stylesheet">
+    <link href="pages/index.css" rel="stylesheet">
 </head>
 <body>
 <div class="page">
     <header class="header">
         <div class="header__logo-container">
-            <img src="media/header/logo.svg" alt="Mesto Russia" class="header__logo">
+            <img alt="Mesto Russia" class="header__logo" src="media/header/logo.svg">
         </div>
     </header>
     <div class="root-container">
@@ -21,20 +21,20 @@
         <main class="content">
             <div class="profile">
                 <div class="profile__container">
-                    <img src="media/profile/avatar.jpg" alt="Нет аватарки" class="profile__avatar">
+                    <img alt="Нет аватарки" class="profile__avatar" src="media/profile/avatar.jpg">
                     <div class="profile__info">
                         <div class="profile__row">
                             <h1 class="profile__name">Жак-Ив Кусто</h1>
                             <button class="profile__edit-button" type="button">
-                                <img src="media/profile/edit-button.svg" alt="Редактировать"
-                                     class="profile__edit-button-icon">
+                                <img alt="Редактировать" class="profile__edit-button-icon"
+                                     src="media/profile/edit-button.svg">
                             </button>
                         </div>
                         <p class="profile__row profile__work-place">Исследователь океана</p>
                     </div>
 
                     <button class="profile__add-button" type="button">
-                        <img src="media/profile/add-button.svg" alt="Новая карточка" class="profile__add-icon">
+                        <img alt="Новая карточка" class="profile__add-icon" src="media/profile/add-button.svg">
                     </button>
                 </div>
             </div>
@@ -44,10 +44,10 @@
                     <button class="popup__close-button edit-popup__close-button" type="button"></button>
                     <h3 class="popup__head-text">Редактировать профиль</h3>
                     <form name="change-profile">
-                        <input type="text" name="name" placeholder="Ваше имя"
-                               class="popup__input edit-popup__name-input">
-                        <input type="text" name="work" placeholder="Ваша работа"
-                               class="popup__input edit-popup__work-input">
+                        <input class="popup__input edit-popup__name-input" name="name" placeholder="Ваше имя"
+                               type="text">
+                        <input class="popup__input edit-popup__work-input" name="work" placeholder="Ваша работа"
+                               type="text">
                         <button class="popup__save-button edit-popup__save-button" type="submit">
                             Сохранить
                         </button>
@@ -60,10 +60,10 @@
                     <button class="popup__close-button add-popup__close-button" type="button"></button>
                     <h3 class="popup__head-text">Новое место</h3>
                     <form name="add-card">
-                        <input type="text" name="name" placeholder="Название"
-                               class="popup__input add-popup__name-input">
-                        <input type="text" name="image" placeholder="Ссылка на картинку"
-                               class="popup__input add-popup__image-input">
+                        <input class="popup__input add-popup__name-input" name="name" placeholder="Название"
+                               type="text">
+                        <input class="popup__input add-popup__image-input" name="image" placeholder="Ссылка на картинку"
+                               type="text">
                         <button class="popup__save-button add-popup__save-button" type="submit">
                             Создать
                         </button>
@@ -74,7 +74,7 @@
             <div class="popup gallery-popup popup_dark">
                 <div class="popup__image-container">
                     <button class="popup__close-button gallery-popup__close-button" type="button"></button>
-                    <img src="" alt="" class="popup__image">
+                    <img alt="" class="popup__image" src="">
                     <p class="popup__image-name"></p>
                 </div>
             </div>
@@ -94,7 +94,7 @@
 <template id="card">
     <article class="content__card">
         <button class="content__delete-button" type="button"></button>
-        <img src="" alt="" class="content__image">
+        <img alt="" class="content__image" src="">
         <div class="content__description">
             <h2 class="content__name"></h2>
             <button class="content__like-button" type="button"></button>

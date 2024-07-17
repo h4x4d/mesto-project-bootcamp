@@ -86,7 +86,7 @@ function createCard(card) {
         event.target.closest('.content__card').remove()
     })
 
-    image.addEventListener('click', function (event) {
+    image.addEventListener('click', function (_) {
         openPopup(galleryPopup);
         galleryPopupImage.src = card.link;
         galleryPopupImage.alt = card.name;
@@ -95,7 +95,7 @@ function createCard(card) {
     return newCard
 }
 
-function addCard(card, method="prepend") {
+function addCard(card, method = "prepend") {
     const newCard = createCard(card);
     cardsContainer[method](newCard);
 }

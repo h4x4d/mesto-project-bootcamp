@@ -1,7 +1,7 @@
 .content__card {
     position: relative;
 
-    width: calc((100% - 40px)/3);
+    width: calc((100% - 40px) / 3);
 
     background-color: white;
 
@@ -10,9 +10,10 @@
 
 @media screen and (max-width: 900px) {
     .content__card {
-        width: calc((100% - 40px)/2);
+        width: calc((100% - 40px) / 2);
     }
 }
+
 @media screen and (max-width: 500px) {
     .content__card {
         width: 100%;
